@@ -16,4 +16,4 @@ const scrapeWebsite = async () => {
   }
 };
 
-scrapeWebsite();
+module.exports = scrapeWebsite;
