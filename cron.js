@@ -1,6 +1,6 @@
-const cron = require("cron");
+const cron = require("node-cron");
 const scrapeWebsite = require("./scraper");
-const postData = require("./poster");
+const postData = require("./postData");
 
 cron.schedule("* * * * *", async () => {
   console.log("Running scraping and posting job...");

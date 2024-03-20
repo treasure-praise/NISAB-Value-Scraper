@@ -1,10 +1,12 @@
 const axios = require("axios");
-const { data } = require("cheerio/lib/api/attributes");
+require("dotenv").config();
 
 const postData = async (data) => {
   try {
-    const response = await axios.post("endpoint", { data });
-    console.log("Data posted successfully:", response, data);
+    // const response = await axios.post(`${process.env.POST_URL}`, { data });
+
+    console.log("Data posted successfully:", data);
+    // console.log("Data posted successfully:", response, data);
   } catch (error) {
     console.log("error posting data:", error);
   }
